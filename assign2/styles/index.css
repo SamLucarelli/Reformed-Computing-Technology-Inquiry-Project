@@ -1,0 +1,337 @@
+/*
+filename: [Simrin Huq]
+author: [Simrin Huq]
+created: [07/04/2022]
+last modified: [07/04/2022]
+description: [index.html]
+*/
+.menu {display: inline-block; }	
+
+article{
+	 max-width: 1220px;
+	 margin: 0 auto;
+}
+/*header*/
+article h2{
+	font-family: arial;
+	letter-spacing: 4px;
+	font-size: 72px;
+	padding-top: .5em;
+	padding-left: .5em;
+	
+}
+/*image and writing*/
+img { max-width: 100%;}
+#section1, #section2, #section3 {
+	font-family: arial;
+	color: ghostwhite;
+	background-color: black;
+	padding: 0.5em 0.5em 0.5em;
+	float: left;
+	width: 30%;
+	text-align: justify;
+	margin: 1em 1em 1em 1em;
+	border: 4px inset #F8FDFE;
+       border-radius: 1px;
+	   margin: 1em;
+	   padding: 1em;
+	   width: 30%;
+	   filter: drop-shadow(1px 1px 1px white);
+}
+
+/*slide images*/
+#slider2 {
+	overflow: hidden;
+}
+#slider2 figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider2 figure img {
+	width: 20%;
+	float: left;
+}
+
+/*brief introduction to what's in the page*/
+h3{
+	font-family: arial;
+	padding: 0.5em 0.5em 0.5em;
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+h4{ 
+	font-family: arial; }
+
+
+/*nav bar*/
+/*background color from https://www.w3.org/TR/css-color-3/#svg-color
+https://www.cssportal.com/html-colors/color-picker.php*/
+body {
+  margin: 0;
+  font-family: Helvetica, arial;
+ background-image: linear-gradient(180deg, white,  #ca85c0, rgb(129, 51, 129));;
+	   top: 50%;
+            left: 50%;;
+}
+@media screen and (max-width: 800px) {
+	#section1, #section2, #section3, h1 {
+	width: 100%;}
+}
+	
+
+#title {
+	font-family: arial;
+    color: white;
+	text-decoration: none;
+}
+
+a { color:#000;}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 10px 10px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 1em;
+  padding: 3px 5px;
+  text-decoration: none;
+}
+
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+
+/* 48em = 768px @ 16pt font */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*footer*/
+#footer_image{ 
+	width: 50px;
+	height: 50px;
+}
+
+
+*, *:before, *:after {
+box-sizing: border-box;
+}
+
+body {
+font-family: poppins;
+margin: 0;
+display: grid;
+font-size: 14px;
+}
+header p {
+padding: 50px;
+text-align: center;
+color: #bebebe;
+text-transform: uppercase;
+font-size: 65px;
+font-weight: 700;
+}
+.footer {
+display: flex;
+flex-flow: row wrap;
+padding: 50px;
+color: #fff;
+background-color: black;
+}
+
+.footer > * {
+flex:  1 100%;
+}
+
+.l-footer {
+margin-right: 1.25em;
+margin-bottom: 2em;
+}
+
+h2 {
+font-weight: 400;
+font-size: 15px;
+}
+
+.footer ul {
+list-style: none;
+padding-left: 0;
+}
+
+.footer li {
+line-height: 2em;
+}
+
+.footer a {
+text-decoration: none;
+}
+
+.r-footer {
+display: flex;
+flex-flow: row wrap;
+}
+
+.r-footer > * {
+flex: 1 50%;
+margin-right: 1.25em;
+}
+
+.box a {
+color: #999;
+}
+
+.h-box {
+column-count: 2;
+column-gap: 1.25em;
+}
+
+.b-footer {
+text-align: center;
+color: #999;
+padding-top: 50px;
+}
+
+.l-footer p {
+padding-right: 20%;
+color: #999;
+}   
+
+@media screen and (min-width: 600px) {
+.r-footer > * {
+flex: 1;
+}
+
+.features {
+flex-grow: 2;
+}
+
+.l-footer {
+flex: 1 0px;
+}
+
+.r-footer {
+flex: 2 0px;
+}
+}

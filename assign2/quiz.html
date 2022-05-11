@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Creating Web Applications" />
+	<meta name="keywords" content="HTML, CSS" />
+	<meta name="author" content="Shafia Husna" />
+	
+	<title>Quiz Page</title>
+	<link href= "styles/quiz.css" rel="stylesheet"/>
+	
+</head>
+
+        
+
+<body id="wholedoc">
+<!-- A body id has been given to use it as a CSS selector -->
+<header class="header">
+            <a href="index.html" class="logo"> <img src="images/nav_main_logo.jpg" alt="Website Logo Image"> </a>
+			<a href="index.html" id="logo_text"> <img src="images/logo_text.png" alt="Website Logo Text"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+				<li><a href="index.html">index</a></li>
+				<li><a href="topic.html">topic</a></li>
+				<li><a href="quiz.html">quiz</a></li>
+				<li><a href="enhancements.html">enchancements</a></li>
+		
+            </ul>
+        </header>
+<br> <br> <br> <br>
+
+<h1>This is the Quiz page!</h1>
+<div id="head1">
+<p>Please input your details </p>
+<p>And start reviewing your favourite game!</p>
+</div>
+
+<!-- A header element has been assigned for the two header paragraphs -->
+<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+<!-- 'post' form method to submit data for storage -->
+<fieldset> 
+<!-- To separate this section of the form from the rest -->
+<!-- Text input fields -->
+<legend><span class="special">Student Details</span></legend>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="Fname"><span class="special1">First Name:</span>
+<input type="text" id="Fname" name="firstname" required ="required" pattern="[A-Za-z- ]{1,30}" autofocus="autofocus" /></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label for="Lname"><span class="special1">Last Name:</span>
+<input type="text" id="Lname" name="lastname" required ="required" pattern="[A-Za-z- ]{1,30}" /></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- The patterns for the first name and last name accepts a maximum of 30 alpha characters, hyphens and spaces -->
+<label for="SID"><span class="special1">Student ID:</span>
+<input type="text" id="SID" name="SID" required ="required" pattern="\d{7}|\d{10}"/></label>
+<!-- This pattern ensures that the student ID entered is either 7 or 10 numerals -->
+<!-- In-line span elements have been put around the words for editing in CSS -->
+</fieldset>
+<p></p>
+
+<fieldset>
+<legend><span class="special">Complete the survey below: </span></legend>
+<span class="special1"> Most favourite MMORPG:-</span>
+<!-- In-line span elements have been put around the words for editing in CSS -->
+<p>
+<!-- Radio buttons -->
+<label for="Most_fav"><input type="radio" id="Most_fav" class="radbut" name="most_fav"
+value="World of Warcraft" required="required" /> 
+<!-- Required field -->
+<span class="special2">World of Warcraft</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label><input type="radio" class="radbut" name="most_fav"
+value="Elder Scrolls" /><span class="special2">Elder Scrolls</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label><input type="radio" class="radbut" name="most_fav"
+value="Final Fantasy XIV" /><span class="special2">Final Fantasy XIV</span></label>
+<!-- In-line span elements have been put around the words for editing in CSS -->
+</p>
+<div>
+<!-- Range slider -->
+  <input type="range" id="Levelolikeness" name="levelolikeness"
+         min="0" max="110">
+  <label for="Levelolikeness"><span class="special11">Fondness level</span> </label>
+</div>
+
+<p><label for="GOTD"><span class="special1">Game that you want to review:</span> </label>
+<!-- Select option -->
+<select name="gameoftheday" id="GOTD" required="required">
+<option value="" >Please select</option>
+<optgroup label="Select any one">
+<!-- Grouping inside the select function -->
+<option value="World of Warcraft" >World of Warcraft</option>
+<option value="Elder Scrolls">Elder Scrolls</option>
+<option value="Final Fantasy XIV">Final Fantasy XIV</option>
+</optgroup>
+
+<optgroup label="More...">
+<!-- Grouping inside the select function -->
+<option value="Lost Arc" >Lost Arc</option>
+<option value="Maple Story">Maple Story</option>
+<option value="Ever Quest II">Ever Quest II</option>
+</optgroup>
+
+</select>
+</p>
+
+
+
+<p><span class="special1">Functionalities that impressed you the most:</span></p>
+<!-- Checkboxes -->
+<label for="Func"><input type="checkbox" id="Func" class="funct" name="func[]"
+value="Aesthetics" checked="checked" /><span class="special2">Aesthetics</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label><input type="checkbox" class="funct" name="func[]"
+value="Game controls" /><span class="special2">Game controls</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label><input type="checkbox" class="funct" name="func[]"
+value="Storyline" /><span class="special2">Storyline</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label><input type="checkbox" class="funct" name="func[]"
+value="Characters" /><span class="special2">Characters</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label><input type="checkbox" class="funct" name="func[]"
+value="O&Rs" /><span class="special2">Objectives & Rewards</span></label>
+<!-- In-line span elements have been put around the words for editing in CSS -->
+<aside>
+
+<img id="imagee" src="images/quiz_image/Untitled.gif" alt="Computer man">
+
+<p><label for="text"><span class="special">Include a few nice words!</span> <br />
+
+
+
+<!-- Text box input -->
+<textarea placeholder
+        ="Write your review..." name="review" id="text" rows="4" cols="65" ></textarea> 
+</label></p>
+<!-- Hidden characters input -->
+<p><label for="secmess"><span class="special"> Secret Message!</span> <input type = "password" name="secmess" id="secmess" size = "50" maxlength="150"/></label></p>
+</aside>
+
+</fieldset>
+
+<div id="myfile">
+<!-- File upload -->
+<label><span class="special">Want to upload a file?</span></label> 
+  <p><input type="file" name="myfile"></p>
+  
+</div>
+
+<p>
+<!-- Clicking images for submit and reset buttons -->
+<button type="submit" id="buit"><img src="images/quiz_image/submit.png" alt="Submit"/></button>
+<button type="reset" id="set"><img src="images/quiz_image/clear.png" alt="Reset"/></button>
+
+</p>
+</form>
+
+
+
+<footer class="footer">
+		<div class="l-footer">
+			<h1>
+				<img src="images/main_logo.jpg" alt="Footer Website Logo">
+			</h1>
+		<p>
+		Made by fans for fans. A site where u can find; Patch updates, Releases, Skins and more
+		Where genuine reviews by our unbiased fello goodmen is the team's number 1 priority.
+		</p>
+		
+		</div>
+		<ul class="r-footer">
+			<li>
+				<h2 class="h2_footer">Social</h2>
+				<ul class="box">
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Instragram</a></li>
+				</ul>
+			</li>
+			<li class="features">
+				<h2 class="h2_footer">Team's Information</h2>
+				<ul class="box h-box">
+					<li><a href="mailto:103836143@student.swin.edu.au">Sam Lucarelli</a></li>
+					<li><a href="mailto:103803710@student.swin.edu.au">Moshfeque E Jahan</a></li>
+					<li><a href="mailto:103677494@student.swin.edu.au">Isabella Ozdilian</a></li>
+					<li><a href="mailto:103807822@student.swin.edu.au">Shafia Husna</a></li>
+					<li><a href="mailto:103836143@student.swin.edu.au">Simrin Huq</a></li>
+					
+				</ul>
+			</li>
+			<li>
+				<h2 class="h2_footer">Legal</h2>
+				<ul class="box">
+					<li><a href="#"><em>Privacy Policy</em></a></li>
+					<li><a href="#"><em>Terms of Use</em></a></li>
+					<li><a href="#"><em>Contract</em></a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="b-footer">
+		<p>All rights reserved by ©MMORPG 2022 </p>
+		</div>
+</footer>
+</body>
+
+
+
+
+
+
+
+</html> 

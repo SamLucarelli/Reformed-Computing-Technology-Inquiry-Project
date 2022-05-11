@@ -1,0 +1,325 @@
+/*
+filename: [quiz.html]
+author: [Shafia Husna]
+created: [07/04/2022]
+last modified: [10/04/2022]
+description: [quiz.css]
+*/
+
+h1 {color: white; 
+	font-size: 2.5em; 
+	font-family:"Arial" ; 
+	text-align: center; 
+	text-shadow: 5px 2px 3px purple;
+	}
+/* Only the heading1 has been edited to make it stand out */
+#head1{ font-size: 1.5em; font-family: verdana; text-align: center; }
+/* The header paragraphs have been aligned at the center; right under the heading1 */
+
+aside {border: 2.5px inset white;
+       border-radius: 4px;
+	   margin: 1em;
+	   padding: 1em;
+	   width: 68%;
+	   filter: drop-shadow(5px 5px 4px #ffe6f2);
+	   /* Angular gradient background using hexadecimal format color code */
+	   background-image: linear-gradient(250deg,  #ffccff, white);
+	   top: 50%;
+            left: 50%;
+            
+	   }
+aside::before {content: url(images/quiz_image/Untitled.gif); }
+
+aside {font-size: 1em;}
+#myfile {text-align: center;}
+
+.radbut {cursor: pointer;}
+.funct {cursor: pointer;}
+#Levelolikeness {cursor: e-resize;}
+#buit {cursor: progress; float: right; }
+/* Cursor icon variations */
+#set, #buit {filter: drop-shadow(5px 5px 4px #0000ff);}
+
+.special {font-family: "Garamond", serif; 
+	color: #000099; 
+	font-weight: bold; 
+	font-size: 1em
+	}
+.special1, .special11 {font-family: "Monaco", monospace; font-size: 1em;}
+.special2 {font-family: "Lucida Handwriting", cursive; color: #0066ff;}
+.special11 {font-size: 1.5em; color: #0349fc; text-shadow: 5px 2px 3px #33ccff; font-weight: bold; font-style: italic;}
+#wholedoc {background-image: linear-gradient(300deg, #660033, #ffe6f2, white);}
+fieldset {box-shadow: 3px 2px 5px #000099 ;}
+/* To maintain size according to the window */
+#imagee, #text, #secmess {width: 100%;
+                          height: auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*nav bar*/
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #bbb;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 10px 10px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 1em;
+  padding: 3px 5px;
+  text-decoration: none;
+}
+
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+
+/* 48em = 768px @ 16pt font */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+/*footer*/
+#footer_image{ 
+	width:50%;
+	height:50%;
+}
+
+
+*, *:before, *:after {
+box-sizing: border-box;
+}
+
+body {
+font-family: poppins;
+margin: 0;
+display: grid;
+font-size: 14px;
+}
+header p {
+padding: 50px;
+text-align: center;
+color: #bebebe;
+text-transform: uppercase;
+font-size: 65px;
+font-weight: 700;
+}
+.footer {
+display: flex;
+flex-flow: row wrap;
+padding: 50px;
+color: #fff;
+background-color: black;
+}
+
+.footer > * {
+flex:  1 100%;
+}
+
+.l-footer {
+margin-right: 1.25em;
+margin-bottom: 2em;
+}
+
+#h2_footer {
+font-weight: 400;
+font-size: 15px;
+}
+
+.footer ul {
+list-style: none;
+padding-left: 0;
+}
+
+.footer li {
+line-height: 2em;
+}
+
+.footer a {
+text-decoration: none;
+}
+
+.r-footer {
+display: flex;
+flex-flow: row wrap;
+}
+
+.r-footer > * {
+flex: 1 50%;
+margin-right: 1.25em;
+}
+
+.box a {
+color: #999;
+}
+
+.h-box {
+column-count: 2;
+column-gap: 1.25em;
+}
+
+.b-footer {
+text-align: center;
+color: #999;
+padding-top: 50px;
+}
+
+.l-footer p {
+padding-right: 20%;
+color: #999;
+}   
+
+@media screen and (min-width: 600px) {
+.r-footer > * {
+flex: 1;
+}
+
+.features {
+flex-grow: 2;
+}
+
+.l-footer {
+flex: 1 0px;
+}
+
+.r-footer {
+flex: 2 0px;
+}
+}

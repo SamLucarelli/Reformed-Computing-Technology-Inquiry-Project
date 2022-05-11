@@ -1,0 +1,494 @@
+/*
+filename: [topic.html]
+author: [Isabella Ozdilian]
+created: [07/04/2022]
+last modified: [011/04/2022]
+description: [topic css]
+*/ 
+
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+
+
+
+
+h1 {color: purple; font-size: 3em; font-family: "American Typewriter", serif; text-align: center; text-shadow: 5px 2px 3px black;}
+#h2_footer {color: rgb(68, 9, 68); font-size: 2em; font-family: "American Typewriter", sans-serif; text-align: center; text-shadow: 5px 2px 3px rgb(231, 185, 233);}
+h3 {color: rgb(95, 15, 64); font-size: 2em; font-family: "American Typewriter", sans-serif; text-align: center; text-shadow: 5px 2px 3px rgb(215, 180, 216);}
+h4 {color: rgb(15, 1, 15); font-size: 0.9em; font-family: "American Typewriter", sans-serif; text-align: center; text-shadow: 5px 2px 3px rgb(200, 168, 201);}
+
+
+body {
+  
+  background-image: linear-gradient(180deg, white,  #ca85c0, rgb(129, 51, 129));;
+    text-align: center;
+    
+
+    
+  }
+
+
+#topicsection0, #topicsection1, #topicsection2, #topicsection3, #topicsection4, #topicsection5, #topicsection6, #topicsection7, #topicsection8, #topicsection9, #topicsection10
+{border: 2.5px inset purple;
+  border-radius: 4px;
+  margin: 1em;
+  padding: 1em;
+  width: 100%;
+  
+  background-image: linear-gradient(250deg,  #ffffff, rgb(255, 255, 255));}
+
+  /* ul {text-align: center; list-style-position: outside;} */
+  ol {text-align: center; list-style-position: outside;}
+  
+  p.groove {border-style: groove;}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    
+  }
+
+  
+   #topic_table {border: 2.5px inset rgb(255, 255, 255);
+    border-radius: 0.5px;
+    margin: 0em;
+    padding: 0em;
+    width: 25%;
+    
+    background-image: linear-gradient(250deg,  #e4c5f8, white);}
+
+
+  
+aside {border: 2.5px inset purple;
+       border-radius: 4px;
+	   margin: 1em;
+	   padding: 1em;
+	   width: 30%;
+	   float:right;
+	   background-image: linear-gradient(250deg,  #e4c5f8, white);}
+
+
+
+       table {
+        width: 100%;
+      }
+ .tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+ .tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+ font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+ font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-8v1j{background-color:#cacceb;text-align:left;vertical-align:top}
+.tg .tg-0coo{background-color:#cacceb;font-weight:bold;text-align:left;vertical-align:top}
+       
+      
+	  
+
+
+
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 10px 10px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 1em;
+  padding: 3px 5px;
+  text-decoration: none;
+}
+
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+
+/* 48em = 768px @ 16pt font */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+
+
+
+/*footer*/
+#footer_image{ 
+	width:50%;
+	height:50%;
+}
+
+
+*, *:before, *:after {
+box-sizing: border-box;
+}
+
+body {
+font-family: poppins;
+margin: 0;
+display: grid;
+font-size: 14px;
+}
+header p {
+padding: 50px;
+text-align: center;
+color: #bebebe;
+text-transform: uppercase;
+font-size: 65px;
+font-weight: 700;
+}
+.footer {
+display: flex;
+flex-flow: row wrap;
+padding: 50px;
+color: #fff;
+background-color: black;
+}
+
+.footer > * {
+flex:  1 100%;
+}
+
+.l-footer {
+margin-right: 1.25em;
+margin-bottom: 2em;
+}
+
+.h2_footer {
+font-weight: 400;
+font-size: 15px;
+}
+
+.footer ul {
+list-style: none;
+padding-left: 0;
+}
+
+.footer li {
+line-height: 2em;
+}
+
+.footer a {
+text-decoration: none;
+}
+
+.r-footer {
+display: flex;
+flex-flow: row wrap;
+}
+
+.r-footer > * {
+flex: 1 50%;
+margin-right: 1.25em;
+}
+
+.box a {
+color: #999;
+}
+
+.h-box {
+column-count: 2;
+column-gap: 1.25em;
+}
+
+.b-footer {
+text-align: center;
+color: #999;
+padding-top: 50px;
+}
+
+.l-footer p {
+padding-right: 20%;
+color: #999;
+}   
+
+@media screen and (min-width: 600px) {
+.r-footer > * {
+flex: 1;
+}
+
+.features {
+flex-grow: 2;
+}
+
+.l-footer {
+flex: 1 0px;
+}
+
+.r-footer {
+flex: 2 0px;
+}
+}
+
+
+/*social css*/
+
+
+/*discord hover image*/
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.discord_container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 45%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  float:right;
+  
+}
+
+.discord_middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 3170px;
+  left: 487px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.discord_container:hover .image {
+  opacity: 0.3;
+}
+
+.discord_container:hover .discord_middle{
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+
+
+
+/*facebook hover image*/
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.facebook_container {
+  position: relative;
+  width: 50%;
+}
+
+.facebook_middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 3170px;
+  left: 1120px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.facebook_container:hover .image {
+  opacity: 0.3;
+}
+
+.facebook_container:hover .facebook_middle{
+  opacity: 1;
+}
+
+</style>
+
+/*twitter image*/
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.twitter_container {
+  position: relative;
+  width: 50%;
+}
+
+
+.twitter_middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 3170px;
+  left: 1755px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.twitter_container:hover .image {
+  opacity: 0.3;
+}
+
+.twitter_container:hover .twitter_middle{
+  opacity: 1;
+}
+
+</style>
+
+/*column images*/
+
+
+
+
+/*column imgs*/
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.row_images{
+
+	
+		
+
+		
+}
+
+.row_text{
+
+vertical-align:middle;
+}
+
+</style>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+sources:
+	https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns
+	https://www.w3schools.com/howto/howto_css_images_side_by_side.asp
+	https://www.w3schools.com/howto/howto_css_image_overlay.asp
+-->
+
+    <head>
+  
+  <meta charset="utf-8" />
+  <meta name="description" content="MMORPG introduction HTML" />
+  <meta name="keywords"    content="HTML, MMORPG, tags" />
+  <meta name="author"	   content="Sam Lu" />
+  <title>MMORPG</title>
+  <link href="styles/enhancements.css" rel="stylesheet"> 
+	
+    </head>
+	
+	<!--nav bar: https://github.com/wilsmex/edu/tree/master/responsive_menu_css_only/finish -->	
+
+	
+		
+<body>
+    <header class="header">
+		<a href="index.html" class="logo"> <img src="images/nav_main_logo.jpg" alt="Website Logo Image"> </a>
+		<a href="index.html" id="logo_text"> <img src="images/logo_text.png" alt="Website Logo Text"></a>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+		<ul class="menu">
+			<li><a href="index.html">index</a></li>
+			<li><a href="topic.html">topic</a></li>
+			<li><a href="quiz.html">quiz</a></li>
+			<li><a href="enhancements.html">enchancements</a></li>
+	
+		</ul>
+	</header>	
+		<br>
+		<br>
+		<br>
+		<br>
+		<!--slideshow-->
+	<div id="slider">
+		<figure>
+			<img src="images/index_image/slideshow/img1.jpg" alt="Website Slideshow image 1">
+			<img src="images/index_image/slideshow/img1.jpg" alt="Website Slideshow image 2">				
+		</figure>
+	</div>
+		
+		
+		<h1 id="page_title"> Enchancement page</h1>
+		<hr>
+		
+	<div class="row_top">
+	  <div class="column">
+		<h2>Enchancement 1: Social Button</h2>
+		<p>
+			Our first Enchance found <a href="#Enchancement1">on this page</a> or <a href="">in our website</a>
+			is 3 aligned images side by side in 3 equal columns with an overlayed fade-in with a button.
+		</p>
+		
+		<ol>
+			<li>Going beyond the basics<br/><br/>
+			
+				While the html has some degree of complexity, its really the css that goes beyond the lectures, yet still retains some similarities. <br/><br/>
+			
+			</li>
+			<li>Coded needed to implement features<br/><br/>
+			
+				For the html its mainly div tags for the columns and then classes for the overlay fade,
+				with basic text functions like h1 for writing text, implementing an image using 
+				img src=”...” alt”..." and then repeating in each column. 
+				</li>		
+		
+		</ol>
+		
+		
+		<h3>Sources: </h3>
+		<ul>
+			<li><a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns">Responsive Coulmns</a></li>
+			<li><a href="https://www.w3schools.com/howto/howto_css_images_side_by_side.asp">Alinged images</a></li>
+			<li><a href="https://www.w3schools.com/howto/howto_css_image_overlay.asp">Image overlay fade</a></li>
+		</ul>
+	  </div>
+	<div class="column_top">
+		<h2>Enchancement 2: Slideshow</h2>		
+		<p>
+		Our second enchacement is a slideshow which can be found 
+		<a href="#slider">on this page</a> or implemented <a href="">in our website</a>
+		</p>		
+		<ol>
+			<li>Going beyong the basics<br/><br/>
+			
+				This is extremely advance due to the lack of java script. The only trouble was removing pop up for a plug to there YouTube channel.<br/><br/> 
+			</li>		
+			<li>Coded needed to implement features<br/><br/>
+			
+				It seems to be a combination of scripts, keyframes and then your usual css
+			</li>				
+		</ol>
+		
+		<h3>Sources: </h3>
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=pGHOaY4dhAA">Youtube Video</a></li>
+			<li><a href="https://m.w3newbie.com/w/tutorial-12.zip"> <strong> (DIRECT DOWNLOAD)</strong> Source Code</a></li>
+		</ul>
+		
+		<p><strong>Note:</strong> Just a place holder image</p>
+	  </div>
+	</div>
+		
+		
+		
+	<div id="Enchancement1">
+		<div class="column">		
+			<div class="discord_container">				
+			  <img src="styles/images/discord.png" alt="Discord Logo" class="image" class="discord_image">
+			  <h1>Our Discord Server!</h1>
+			  <div class="discord_middle">
+				<div class="text"><a href="discord.com">Join Our Discord!</a></div>
+			  </div>
+			</div>
+		</div>
+		</div>
+		
+		<div class="column">		
+			<div class="facebook_container">
+			  <img src="styles/images/facebook.png" alt="Facebook Logo" class="image">
+			  <h1>Our Facebook Group!</h1>
+			  <div class="facebook_middle">
+				<div class="text"><a href="discord.com">Join Our Facebook Group!</a></div>
+			  </div>
+			</div>
+		</div>
+
+		<div class="column">		
+			<div class="twitter_container">
+			  <img src="styles/images/twitter.png" alt="Twitter logo" class="image">
+			  <h1>Our Twitter Feed!</h1>
+			  <div class="twitter_middle">
+				<div class="text"><a href="discord.com">Join Our Twitter Feed!</a></div>
+			  </div>
+			</div>
+		</div>
+
+
+	  
+
+	
+<!--Footer: https://www.codingflicks.com/2020/09/responsive-footer-design-using-css-flexbox.html -->
+
+	<footer class="footer">
+		<div class="l-footer">
+			<h1>
+				<img src="images/main_logo.jpg" alt="Footer Website Logo">
+			</h1>
+		<p>
+		Made by fans for fans. A site where u can find Patch updates Releases Skins and more
+		Where genuine reviews by our unbiased fello goodmen is the team's number 1 priority.
+		</p>
+		
+		</div>
+		<ul class="r-footer">
+			<li>
+				<h2 class="h2_footer">Social</h2>
+				<ul class="box">
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Instragram</a></li>
+				</ul>
+			</li>
+			<li class="features">
+				<h2>Team's Information</h2>
+				<ul class="box h-box">
+					<li><a href="mailto:103836143@student.swin.edu.au">Sam Lucarelli</a></li>
+					<li><a href="mailto:103803710@student.swin.edu.au">Moshfeque E Jahan</a></li>
+					<li><a href="mailto:103677494@student.swin.edu.au">Isabella Ozdilian</a></li>
+					<li><a href="mailto:103807822@student.swin.edu.au">Shafia Husna</a></li>
+					<li><a href="mailto:103836143@student.swin.edu.au">Simrin Huq</a></li>
+					
+				</ul>
+			</li>
+			<li>
+				<h2 class="h2_footer">Legal</h2>
+				<ul class="box">
+					<li><a href="#"><em>Privacy Policy</em></a></li>
+					<li><a href="#"><em>Terms of Use</em></a></li>
+					<li><a href="#"><em>Contract</em></a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="b-footer">
+		<p>All rights reserved by ©MMORPG 2022 </p>
+		</div>
+	</footer>
+	</body>
+</html>
